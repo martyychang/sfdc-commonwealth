@@ -1,0 +1,15 @@
+# Local convenience
+.bin/
+
+# Salesforce DX
+.sfdx/
+
+# Salesforce Metadata API
+src/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Mac OS X
+*.DS_Store
