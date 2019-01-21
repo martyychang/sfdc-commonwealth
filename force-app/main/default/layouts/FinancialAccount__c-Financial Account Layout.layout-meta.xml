@@ -12,19 +12,23 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>TransactedDate__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Memo__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Amount__c</field>
+                <field>StartingBalance__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>AmountAllFinancialEntries__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Type__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>HasNormalDebitBalance__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>CurrentBalance__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -65,7 +69,7 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>FinancialEntry__c.Transaction__c</relatedList>
+        <relatedList>FinancialEntry__c.FinancialAccount__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
